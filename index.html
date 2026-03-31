@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Be a Mentor — St. Joseph's College of Engineering alumni mentorship program." />
+  <title>Be a Mentor | St. Joseph's College of Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@700&family=Noto+Sans+Tamil:wght@700&family=Noto+Sans+Telugu:wght@700&family=Noto+Sans+Malayalam:wght@700&family=Noto+Sans+Kannada:wght@700&family=Noto+Sans+Bengali:wght@700&family=Noto+Sans+Oriya:wght@700&family=Noto+Sans+Gujarati:wght@700&family=Noto+Sans+Gurmukhi:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══════ UNIFIED NAVBAR ═══════ -->
+  <nav class="glass-nav" id="glassNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <img src="images/logo.png" alt="College Logo" class="logo-img" />
+        <div class="brand-text">
+          <h1 class="brand-title">St. Joseph's College of Engineering</h1>
+          <p class="brand-sub">(An Autonomous Institution)</p>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" data-section="hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" data-section="about" class="nav-link">About</a></li>
+        <li><a href="#qualities" data-section="qualities" class="nav-link">Qualities</a></li>
+        <li><a href="#benefits" data-section="benefits" class="nav-link">Benefits</a></li>
+        <li><a href="#process" data-section="process" class="nav-link">Process</a></li>
+        <li><a href="#areas" data-section="areas" class="nav-link">Areas</a></li>
+      </ul>
+      <div class="nav-action">
+        <a href="#mentor-form" class="nav-cta btn-ripple">Become a Mentor</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-wrap" id="heroBgWrap">
+      <img src="images/sj4.jpeg" alt="" class="hero-bg-img" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content-wrap">
+      <div class="hero-text">
+        <h2 class="hero-heading anim-ent" data-d="100">
+          Shape the Future.<br />
+          <span class="hero-dynamic-line">
+            <span class="hero-static">Be a </span><span class="hero-morph-wrap" id="heroMorphWrap"><span class="hero-morph-word active" id="heroMorphWord">Mentor.</span></span>
+          </span>
+        </h2>
+        <p class="hero-sub anim-ent" data-d="300">
+          Share your expertise, inspire ambitious students, and leave a lasting legacy at the institution that built your career.
+        </p>
+        <div class="hero-btns anim-ent" data-d="450">
+          <a href="#mentor-form" class="btn btn-red btn-ripple">
+            <span>Start Mentoring</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#about" class="btn btn-outline btn-ripple">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-image-card tilt-card anim-ent" data-d="550" id="heroImageCard">
+        <div class="hero-card-inner">
+          <div class="hero-carousel">
+            <img src="images/hero1.png" alt="Fullstack Bootcamp" class="carousel-img active" />
+            <img src="images/hero2.png" alt="Alumni Talk" class="carousel-img" />
+            <img src="images/hero3.png" alt="Mock Interview" class="carousel-img" />
+            <div class="carousel-overlay"></div>
+          </div>
+          <div class="hero-card-caption">
+            <span class="caption-pulse"></span>
+            <span class="caption-label" id="captionLabel">Fullstack Bootcamp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll anim-ent" data-d="800">
+      <div class="scroll-indicator"><div class="scroll-dot"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <section class="section about-section" id="about">
+    <!-- Background image with parallax (UNCHANGED) -->
+    <div class="about-bg-wrap" id="aboutBgWrap">
+      <img src="images/ph2.jpeg" alt="" class="about-bg-img" />
+    </div>
+    <!-- Dark gradient overlay -->
+    <div class="about-overlay"></div>
+    <!-- Animated grain texture -->
+    <div class="about-grain"></div>
+
+    <div class="container about-content">
+      <!-- Section Header -->
+      <div class="about-header abt-reveal">
+        <span class="badge badge-glass badge-glow">About the Program</span>
+        <h2 class="about-main-title">
+          <span class="abt-word-reveal">What</span>
+          <span class="abt-word-reveal">is</span>
+          <span class="abt-word-reveal">Alumni</span>
+          <span class="abt-word-reveal abt-highlight">Mentorship?</span>
+        </h2>
+        <p class="about-subtitle abt-reveal">Bridging experienced alumni with ambitious students through transformative guidance</p>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div class="about-layout">
+        <!-- LEFT — Mentor Showcase -->
+        <div class="about-visual abt-reveal">
+          <div class="mentor-showcase" id="mentorShowcase">
+            <div class="mentor-carousel-wrap">
+              <img src="images/m1.jpeg" alt="Mentor" class="mentor-slide active" />
+              <img src="images/m2.jpeg" alt="Mentor" class="mentor-slide" />
+              <img src="images/m3.jpeg" alt="Mentor" class="mentor-slide" />
+              <div class="mentor-carousel-overlay"></div>
+            </div>
+            <div class="mentor-nav">
+              <button class="mentor-dot active" data-idx="0" aria-label="Mentor 1"></button>
+              <button class="mentor-dot" data-idx="1" aria-label="Mentor 2"></button>
+              <button class="mentor-dot" data-idx="2" aria-label="Mentor 3"></button>
+            </div>
+            <div class="mentor-badge-float">
+              <span class="mbf-pulse"></span>
+              <span class="mbf-label" id="mentorLabel">Featured Mentors</span>
+            </div>
+          </div>
+          <!-- Floating Accent Elements -->
+          <div class="about-float-accent accent-1"></div>
+          <div class="about-float-accent accent-2"></div>
+        </div>
+
+        <!-- RIGHT — Content Body -->
+        <div class="about-body">
+          <p class="about-desc abt-reveal">Our mentorship program bridges <strong>experienced alumni</strong> and aspiring students. Alumni volunteer their time, knowledge, and networks to help current students with <strong>academic challenges</strong>, career decisions, and personal growth.</p>
+          <p class="about-desc abt-reveal">Whether you graduated five years ago or twenty, your experience holds <em class="abt-highlight-text">immense value</em>. Every insight you share can change someone's trajectory.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ HORIZONTAL SCROLL FEATURES ═══════ -->
+  <section class="hscroll-section" id="hscrollSection">
+    <div class="hscroll-sticky" id="hscrollSticky">
+      <!-- Progress bar -->
+      <div class="hscroll-progress"><div class="hscroll-progress-fill" id="hscrollProgressFill"></div></div>
+
+      <div class="hscroll-track" id="hscrollTrack">
+        <!-- Panel 1 -->
+        <div class="hscroll-panel" data-panel="0">
+          <div class="hpanel-bg">
+            <img src="images/m1.jpeg" alt="" class="hpanel-bg-img" />
+            <div class="hpanel-overlay"></div>
+          </div>
+          <div class="hpanel-content">
+            <div class="hpanel-number">01</div>
+
+            <h3 class="hpanel-title">1-on-1 <span class="feat-accent">Mentoring</span></h3>
+            <p class="hpanel-desc">Personalized guidance tailored to each student's unique journey. Your mentor becomes your trusted advisor, career coach, and industry insider.</p>
+            <div class="hpanel-stat">
+              <span class="hpanel-stat-num">520+</span>
+              <span class="hpanel-stat-label">Active Mentors</span>
+            </div>
+          </div>
+          <div class="hpanel-vline"></div>
+        </div>
+
+        <!-- Panel 2 -->
+        <div class="hscroll-panel" data-panel="1">
+          <div class="hpanel-bg">
+            <img src="images/m2.jpeg" alt="" class="hpanel-bg-img" />
+            <div class="hpanel-overlay"></div>
+          </div>
+          <div class="hpanel-content">
+            <div class="hpanel-number">02</div>
+
+            <h3 class="hpanel-title"><span class="feat-accent">Flexible</span> Schedule</h3>
+            <p class="hpanel-desc">Even 2 hours a month creates lasting impact. Choose your pace — virtual calls, in-person meetups, or async messaging that fits your life.</p>
+            <div class="hpanel-stat">
+              <span class="hpanel-stat-num">8,500+</span>
+              <span class="hpanel-stat-label">Sessions Completed</span>
+            </div>
+          </div>
+          <div class="hpanel-vline"></div>
+        </div>
+
+        <!-- Panel 3 -->
+        <div class="hscroll-panel" data-panel="2">
+          <div class="hpanel-bg">
+            <img src="images/m3.jpeg" alt="" class="hpanel-bg-img" />
+            <div class="hpanel-overlay"></div>
+          </div>
+          <div class="hpanel-content">
+            <div class="hpanel-number">03</div>
+
+            <h3 class="hpanel-title"><span class="feat-accent">Virtual</span> & In-Person</h3>
+            <p class="hpanel-desc">Connect from anywhere through seamless hybrid sessions. Our platform bridges distance with high-quality video, shared workspaces, and progress tracking.</p>
+            <div class="hpanel-stat">
+              <span class="hpanel-stat-num">95%</span>
+              <span class="hpanel-stat-label">Satisfaction Rate</span>
+            </div>
+          </div>
+          <div class="hpanel-vline"></div>
+        </div>
+      </div>
+    </div>
+    <!-- This empty space provides the scroll runway -->
+    <div class="hscroll-spacer"></div>
+  </section>
+
+  <!-- ═══════ ABOUT CONTINUED (Stats + Testimonials) ═══════ -->
+  <section class="section about-section about-section-bottom" id="aboutBottom">
+    <div class="about-bg-wrap about-bg-bottom" id="aboutBgWrapBottom">
+      <img src="images/ph2.jpeg" alt="" class="about-bg-img" />
+    </div>
+    <div class="about-overlay"></div>
+    <div class="about-grain"></div>
+    <div class="container about-content">
+
+      <!-- Mini Stats Row -->
+      <div class="about-stats-row abt-reveal">
+        <div class="about-stat-card">
+          <div class="asc-number" data-abt-target="520" data-abt-suffix="+">0</div>
+          <div class="asc-label">Active Mentors</div>
+          <div class="asc-bar"><div class="asc-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="about-stat-card">
+          <div class="asc-number" data-abt-target="2400" data-abt-suffix="+">0</div>
+          <div class="asc-label">Students Guided</div>
+          <div class="asc-bar"><div class="asc-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="about-stat-card">
+          <div class="asc-number" data-abt-target="95" data-abt-suffix="%">0</div>
+          <div class="asc-label">Satisfaction Rate</div>
+          <div class="asc-bar"><div class="asc-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="about-stat-card">
+          <div class="asc-number" data-abt-target="8500" data-abt-suffix="+">0</div>
+          <div class="asc-label">Sessions Done</div>
+          <div class="asc-bar"><div class="asc-bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+
+      <!-- Testimonials Section -->
+      <div class="about-testimonials abt-reveal">
+        <div class="test-section-header">
+          <span class="badge badge-glass badge-glow">Voices That Matter</span>
+          <h3 class="test-section-title">What Our Mentees Say</h3>
+        </div>
+        <div class="abt-test-slider" id="abtTestSlider">
+          <div class="abt-test-card active">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">My mentor helped me land my dream job at Google. The guidance I received was nothing short of <strong>life-changing</strong>.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#e53935,#ff6659)">PS</div>
+              <div><strong>Priya Sharma</strong><span>Class of 2022 · Software Engineer</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">The mentorship program gave me clarity on my career path. My mentor's <strong>real-world insights</strong> were invaluable.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#1565c0,#42a5f5)">RK</div>
+              <div><strong>Rahul Kumar</strong><span>Class of 2023 · Data Analyst</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">From resume reviews to mock interviews, my mentor was there every step. I grew more in 3 months than <strong>3 years alone</strong>.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#6a1b9a,#ab47bc)">AM</div>
+              <div><strong>Anitha Mohan</strong><span>Class of 2021 · Product Designer</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">I was confused about higher studies vs industry. My mentor's <strong>structured guidance</strong> made the decision crystal clear.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#2e7d32,#66bb6a)">VR</div>
+              <div><strong>Vikram Rajan</strong><span>Class of 2024 · MS at CMU</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">The mock interview sessions with my mentor boosted my confidence <strong>tenfold</strong>. I cracked 4 out of 5 placements.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#e65100,#ff9800)">DN</div>
+              <div><strong>Deepa Narayanan</strong><span>Class of 2023 · DevOps Engineer</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">My mentor didn't just teach me coding — they taught me <strong>how to think</strong> like an engineer. That shift changed everything.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#00838f,#26c6da)">KS</div>
+              <div><strong>Karthik Subramani</strong><span>Class of 2022 · Full Stack Developer</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">As a first-generation engineer, I had no industry connections. My mentor opened doors I didn't know <strong>existed</strong>.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#4527a0,#7e57c2)">SL</div>
+              <div><strong>Sathya Lakshmi</strong><span>Class of 2021 · Cloud Architect</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">Weekly 30-minute calls with my mentor gave me more <strong>practical knowledge</strong> than an entire semester of coursework.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#c62828,#ef5350)">MJ</div>
+              <div><strong>Mohamed Jasim</strong><span>Class of 2024 · AI Researcher</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">The mentorship program helped me transition from mechanical to <strong>tech</strong>. My mentor's roadmap was exactly what I needed.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#1b5e20,#4caf50)">RB</div>
+              <div><strong>Revathi Balaji</strong><span>Class of 2022 · Frontend Developer</span></div>
+            </div>
+          </div>
+          <div class="abt-test-card">
+            <div class="atc-stars">★★★★★</div>
+            <p class="atc-text">I launched my startup because my mentor believed in my idea and helped me build a <strong>solid business plan</strong>.</p>
+            <div class="atc-author">
+              <div class="atc-avatar" style="background:linear-gradient(135deg,#bf360c,#ff7043)">AP</div>
+              <div><strong>Arjun Patel</strong><span>Class of 2020 · Startup Founder</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="abt-test-nav" id="abtTestNav">
+          <button class="abt-test-dot active" data-tidx="0"></button>
+          <button class="abt-test-dot" data-tidx="1"></button>
+          <button class="abt-test-dot" data-tidx="2"></button>
+          <button class="abt-test-dot" data-tidx="3"></button>
+          <button class="abt-test-dot" data-tidx="4"></button>
+          <button class="abt-test-dot" data-tidx="5"></button>
+          <button class="abt-test-dot" data-tidx="6"></button>
+          <button class="abt-test-dot" data-tidx="7"></button>
+          <button class="abt-test-dot" data-tidx="8"></button>
+          <button class="abt-test-dot" data-tidx="9"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ QUALITIES ═══════ -->
+  <section class="section section-dark" id="qualities">
+    <div class="container">
+      <div class="sec-header r-el">
+        <span class="badge badge-glass">Core Qualities</span>
+        <h2 class="sec-title tw">What Makes a Great Mentor?</h2>
+        <p class="sec-desc tl">Exceptional mentors share these key qualities that create lasting impact.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="glass-card tilt-card r-el">
+          <div class="gc-icon">👂</div>
+          <h3 class="gc-title">Active Listener</h3>
+          <p class="gc-desc">Creating a safe space where mentees feel truly heard and valued.</p>
+        </div>
+        <div class="glass-card tilt-card r-el">
+          <div class="gc-icon">🧭</div>
+          <h3 class="gc-title">Experienced Guide</h3>
+          <p class="gc-desc">Sharing real-world insights and lessons from professional experience.</p>
+        </div>
+        <div class="glass-card tilt-card r-el">
+          <div class="gc-icon">💡</div>
+          <h3 class="gc-title">Inspiring Motivator</h3>
+          <p class="gc-desc">Encouraging mentees to push boundaries and discover hidden potential.</p>
+        </div>
+        <div class="glass-card tilt-card r-el">
+          <div class="gc-icon">🔄</div>
+          <h3 class="gc-title">Constructive Critic</h3>
+          <p class="gc-desc">Providing honest feedback that drives growth without discouragement.</p>
+        </div>
+        <div class="glass-card tilt-card r-el">
+          <div class="gc-icon">🌱</div>
+          <h3 class="gc-title">Patient Nurturer</h3>
+          <p class="gc-desc">Supporting mentees through every stage with care and patience.</p>
+        </div>
+        <div class="glass-card tilt-card r-el">
+          <div class="gc-icon">🔗</div>
+          <h3 class="gc-title">Network Connector</h3>
+          <p class="gc-desc">Opening doors by connecting mentees with professional networks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ BENEFITS ═══════ -->
+  <section class="section" id="benefits">
+    <div class="container">
+      <div class="sec-header r-el">
+        <span class="badge">Why Mentor?</span>
+        <h2 class="sec-title">Benefits of Being a Mentor</h2>
+        <p class="sec-desc">Mentoring enriches both sides — it's deeply rewarding.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-panel r-el">
+          <h3 class="bp-title"><span>🎓</span> For Mentors</h3>
+          <ul class="bp-list">
+            <li>Sharpen leadership & communication skills</li>
+            <li>Expand your professional network</li>
+            <li>Gain fresh perspectives from young minds</li>
+            <li>Get recognized at alumni events</li>
+            <li>Stay connected with your alma mater</li>
+            <li>Create a meaningful personal legacy</li>
+          </ul>
+        </div>
+        <div class="benefit-panel r-el">
+          <h3 class="bp-title"><span>🚀</span> For Students</h3>
+          <ul class="bp-list">
+            <li>Receive real-world career guidance</li>
+            <li>Build confidence through expert support</li>
+            <li>Access exclusive industry connections</li>
+            <li>Navigate career decisions wisely</li>
+            <li>Develop critical professional skills</li>
+            <li>Get inspired by proven success stories</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ HOW IT WORKS ═══════ -->
+  <section class="section section-dark" id="process">
+    <div class="container">
+      <div class="sec-header r-el">
+        <span class="badge badge-glass">Process</span>
+        <h2 class="sec-title tw">How It Works</h2>
+        <p class="sec-desc tl">Follow these steps to begin your mentoring journey.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-line" id="tlLine"></div>
+        <div class="tl-step r-el">
+          <div class="tl-marker">1</div>
+          <div class="tl-body glass-card-sm">
+            <h3>Register Online</h3>
+            <p>Fill out the mentorship form — it only takes 5 minutes.</p>
+          </div>
+        </div>
+        <div class="tl-step r-el">
+          <div class="tl-marker">2</div>
+          <div class="tl-body glass-card-sm">
+            <h3>Get Matched</h3>
+            <p>We match you with a student based on your expertise and goals.</p>
+          </div>
+        </div>
+        <div class="tl-step r-el">
+          <div class="tl-marker">3</div>
+          <div class="tl-body glass-card-sm">
+            <h3>Orientation Session</h3>
+            <p>Attend a brief orientation on program structure and best practices.</p>
+          </div>
+        </div>
+        <div class="tl-step r-el">
+          <div class="tl-marker">4</div>
+          <div class="tl-body glass-card-sm">
+            <h3>Start Mentoring</h3>
+            <p>Begin sessions — virtual or in-person — and make a real difference.</p>
+          </div>
+        </div>
+        <div class="tl-step r-el">
+          <div class="tl-marker">5</div>
+          <div class="tl-body glass-card-sm">
+            <h3>Track & Celebrate</h3>
+            <p>Log sessions, track progress, and celebrate milestones together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ AREAS ═══════ -->
+  <section class="section" id="areas">
+    <div class="container">
+      <div class="sec-header r-el">
+        <span class="badge">Explore</span>
+        <h2 class="sec-title">Mentorship Areas</h2>
+        <p class="sec-desc">Choose an area that aligns with your expertise.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="area-card tilt-card r-el">
+          <div class="gc-icon">💻</div>
+          <h3 class="gc-title">Technology & Engineering</h3>
+          <p class="gc-desc">Software development, AI/ML, cloud, and system design.</p>
+          <span class="area-tag">Most Popular</span>
+        </div>
+        <div class="area-card tilt-card r-el">
+          <div class="gc-icon">📈</div>
+          <h3 class="gc-title">Business & Management</h3>
+          <p class="gc-desc">Strategy, consulting, marketing, and entrepreneurship.</p>
+          <span class="area-tag">High Demand</span>
+        </div>
+        <div class="area-card tilt-card r-el">
+          <div class="gc-icon">🎨</div>
+          <h3 class="gc-title">Design & Creative</h3>
+          <p class="gc-desc">UI/UX, product design, branding, and creative direction.</p>
+          <span class="area-tag">Growing</span>
+        </div>
+        <div class="area-card tilt-card r-el">
+          <div class="gc-icon">🔬</div>
+          <h3 class="gc-title">Research & Academia</h3>
+          <p class="gc-desc">Methodology, publishing, and higher studies guidance.</p>
+          <span class="area-tag">Specialized</span>
+        </div>
+        <div class="area-card tilt-card r-el">
+          <div class="gc-icon">💰</div>
+          <h3 class="gc-title">Finance & Analytics</h3>
+          <p class="gc-desc">Financial planning, data analytics, and fintech.</p>
+          <span class="area-tag">In Demand</span>
+        </div>
+        <div class="area-card tilt-card r-el">
+          <div class="gc-icon">🏥</div>
+          <h3 class="gc-title">Healthcare & Sciences</h3>
+          <p class="gc-desc">Medical, biotech, pharmaceuticals, and public health.</p>
+          <span class="area-tag">Essential</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FORM ═══════ -->
+  <section class="section section-dark" id="mentor-form">
+    <div class="container">
+      <div class="form-wrap">
+        <div class="form-info r-el">
+          <span class="badge badge-glass">Join Us</span>
+          <h2 class="sec-title tw">Become a Mentor Today</h2>
+          <p class="sec-text tl">Take the first step toward lasting impact. Our team will connect with you within 48 hours.</p>
+          <div class="trust-list">
+            <div class="trust-row"><span>✅</span> No commitment pressure</div>
+            <div class="trust-row"><span>🔒</span> Your data is secure</div>
+            <div class="trust-row"><span>⏱️</span> Takes only 2 minutes</div>
+          </div>
+        </div>
+        <form class="glass-form r-el" id="mentorForm" novalidate>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="fName">Full Name</label>
+              <input type="text" id="fName" placeholder="e.g. Dr. Priya Sharma" required />
+            </div>
+            <div class="f-group">
+              <label for="fEmail">Email Address</label>
+              <input type="email" id="fEmail" placeholder="priya@example.com" required />
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="fYear">Graduation Year</label>
+              <input type="number" id="fYear" placeholder="e.g. 2018" required />
+            </div>
+            <div class="f-group">
+              <label for="fPhone">Phone Number</label>
+              <input type="tel" id="fPhone" placeholder="+91 98765 43210" />
+            </div>
+          </div>
+          <div class="f-group">
+            <label for="fExpertise">Area of Expertise</label>
+            <select id="fExpertise" required>
+              <option value="" disabled selected>Select your domain</option>
+              <option>Technology & Engineering</option>
+              <option>Business & Management</option>
+              <option>Design & Creative</option>
+              <option>Research & Academia</option>
+              <option>Finance & Analytics</option>
+              <option>Healthcare & Sciences</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label for="fLinkedin">LinkedIn <span class="opt">(Optional)</span></label>
+            <input type="url" id="fLinkedin" placeholder="https://linkedin.com/in/you" />
+          </div>
+          <div class="f-group">
+            <label for="fMsg">Why do you want to mentor?</label>
+            <textarea id="fMsg" rows="4" placeholder="Share your motivation..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-red btn-full btn-ripple" id="submitBtn">
+            <span class="btn-lab">Submit Application</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <div class="form-ok" id="formOk">
+            <div class="ok-check">✓</div>
+            <h3>Application Submitted!</h3>
+            <p>Thank you. We'll be in touch within 48 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ STATS ═══════ -->
+  <section class="section section-light" id="impact">
+    <div class="container">
+      <div class="sec-header r-el">
+        <span class="badge">Our Impact</span>
+        <h2 class="sec-title">Numbers That Speak</h2>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card tilt-card r-el">
+          <div class="sc-num" data-target="520">0</div>
+          <div class="sc-lab">Mentors Registered</div>
+        </div>
+        <div class="stat-card tilt-card r-el">
+          <div class="sc-num" data-target="2400">0</div>
+          <div class="sc-lab">Students Mentored</div>
+        </div>
+        <div class="stat-card tilt-card r-el">
+          <div class="sc-num" data-target="8500">0</div>
+          <div class="sc-lab">Sessions Completed</div>
+        </div>
+        <div class="stat-card tilt-card r-el">
+          <div class="sc-num" data-target="95" data-suffix="%">0</div>
+          <div class="sc-lab">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA ═══════ -->
+  <section class="cta-section" id="final-cta">
+    <div class="container">
+      <div class="cta-body r-el">
+        <h2 class="cta-heading">Ready to Make a Difference?</h2>
+        <p class="cta-sub">Your knowledge can light up someone's path. Join 500+ alumni who are already shaping the future.</p>
+        <a href="#mentor-form" class="btn btn-white btn-ripple btn-lg">Become a Mentor Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <div class="foot-logo-row">
+            <img src="images/logo.png" alt="" class="foot-logo" />
+            <span>St. Joseph's College</span>
+          </div>
+          <p>Empowering the next generation through alumni mentorship.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Quick Links</h4>
+          <a href="#about">About Program</a>
+          <a href="#qualities">Mentor Qualities</a>
+          <a href="#process">How It Works</a>
+          <a href="#mentor-form">Apply Now</a>
+        </div>
+        <div class="foot-col">
+          <h4>Resources</h4>
+          <a href="#">Mentor Handbook</a>
+          <a href="#">FAQ</a>
+          <a href="#">Success Stories</a>
+          <a href="#">Contact Support</a>
+        </div>
+        <div class="foot-col">
+          <h4>Connect</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Email Us</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>&copy; 2026 St. Joseph's College of Engineering. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
